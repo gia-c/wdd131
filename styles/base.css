@@ -1,0 +1,295 @@
+/* =========================
+   GENERAL SETTINGS
+   ========================= */
+
+:root {
+    --primary-color: #24577a;
+    --secondary-color: #163b52;
+    --accent-color: #c62828;
+    --light-color: #f4f8fa;
+    --white: #ffffff;
+    --text-color: #222222;
+    --border-color: #b8c4ca;
+
+    --heading-font: "DM Sans", sans-serif;
+    --body-font: "Nunito", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    padding: 15px 10px;
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 10px;
+    font-size: 1rem;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 20px 35px;
+
+     flex: 1;
+}
+
+h1 {
+    margin: 0 0 20px;
+    text-align: center;
+
+    font-family: var(--heading-font);
+    font-size: 2.2rem;
+    font-weight: 500;
+
+    color: var(--secondary-color);
+}
+
+
+/* =========================
+   CARD GRID
+   ========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 10px;
+
+    text-align: center;
+
+    font-family: var(--heading-font);
+    font-size: 1rem;
+
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+
+/* =========================
+   ABOUT CARD
+   ========================= */
+
+.about-content {
+    padding: 16px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 125px;
+    gap: 20px;
+    align-items: start;
+}
+
+.intro p {
+    margin: 0;
+}
+
+.intro img {
+    width: 125px;
+    height: 165px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+}
+
+
+/* =========================
+   LOCATION SECTION
+   ========================= */
+
+.card h3 {
+    max-width: 80%;
+    margin: 15px auto 10px;
+    padding-bottom: 6px;
+
+    text-align: center;
+
+    font-family: var(--heading-font);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.location {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.location figure {
+    margin: 0;
+    text-align: center;
+}
+
+.location img {
+    width: 140px;
+    height: 85px;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+}
+
+.location figcaption {
+    margin-top: 6px;
+
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.location p {
+    margin: 0;
+}
+
+
+/* =========================
+   RESOURCES
+   ========================= */
+
+.resources ul {
+    margin-top: 100px;
+    padding-left: 40px;
+}
+
+.resources li {
+    margin-bottom: 10px;
+}
+
+.resources a {
+    color: #0645ad;
+}
+
+.resources a:hover {
+    color: var(--accent-color);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 15px;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+#lastModified {
+    color: #fff700;
+    font-size: 0.8rem;
+}
+
+
+/* RESPONSIVE DESIGN (For mobile layout) */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+    }
+
+    .intro img {
+        margin: 0 auto;
+    }
+
+    .location {
+        grid-template-columns: 1fr;
+    }
+
+    .location figure {
+        margin: 0 auto;
+    }
+
+    .resources ul {
+        margin-top: 20px;
+    }
+}

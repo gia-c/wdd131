@@ -3,9 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Gisela Casas</title>
+    <meta name="description"
+        content="This is the course landing page for WDD 131 Dynamic Web Fundamentals created by Gisela Casas, featuring web development resources, personal information, Scripture, and final project links.">
+    <meta name="author" content="Gisela Casas">
+    <link rel="stylesheet" href= "styles/base.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Gisela Casas</h1>
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/27?lang=eng#:~:text=1%20The%20Lord%20is%20my%20light%20and%20my%20salvation%3B%20whom%20shall%20I%20fear%3F%20the%20Lord%20is%20the%20strength%20of%20my%20life%3B%20of%20whom%20shall%20I%20be%20afraid%3F"
+                target="_blank">
+                Scripture
+            </a>
+            <a href="#" target="_blank">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Gisela Casas</h1>
+
+        <div class="cards">
+
+            <!-- About Me Card -->
+            <section class="card">
+                <h2>About Me</h2>
+
+                <div class="about-content">
+                    <div class="intro">
+                        <p>
+                            My name is Gisela and I am from Peru. I have a background
+                            in Hotel Management and Tourism, and I am currently studying
+                            Software Development. I enjoy learning new technologies,
+                            creating websites, traveling, and discovering new things.
+                        </p>
+                        <img src="images/profile.webp"
+                            alt="Portrait of Gisela Casas">
+                    </div>
+
+                    <h3>Lima, Peru</h3>
+
+                    <div class="location">
+                        <figure>
+                            <img src="images/peru-flag.webp"
+                                alt="Flag of Peru">
+                            <figcaption>Official Flag of Peru</figcaption>
+                        </figure>
+                        <p>
+                            Peru is a country in western South America known for its
+                            rich history, diverse cultures, beautiful landscapes, and
+                            archaeological treasures. From the Pacific coast to the
+                            Andes Mountains and the Amazon rainforest, Peru has an
+                            incredible variety of natural environments and traditions.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Web Resources Card -->
+            <section class="card resources">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li>
+                        <a href="https://dev.to/" target="_blank">Dev.to Community</a>
+                    </li>
+                    <li>
+                        <a href="https://smashingmagazine.com/" target="_blank">Smashing Magazine</a>
+                    </li>
+                    <li>
+                        <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
+                    </li>
+                    <li>
+                        <a href="https://www.udemy.com/" target="_blank">Udemy</a>
+                    </li>
+                    <li>
+                        <a href="https://picsum.photos/" target="_blank">Lorem Picsum Image Placeholder</a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+
+        <p>© <span id="currentyear"></span>🌸 Gisela Casas 🌸 Peru</p>
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
 </html>
