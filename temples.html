@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Temple Album featuring temples from around the world.">
+
+    <meta name="author" content="Gisela Casas">
+
+    <title>Temple Album | Gisela Casas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <p class="site-title">Temple Album</p>
+
+            <button id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="index.html">Home</a>
+                <a href="#" id="old">Old</a>
+                <a href="#" id="new">New</a>
+                <a href="#" id="large">Large</a>
+                <a href="#" id="small">Small</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <h1 id="page-title">Home</h1>
+
+        <section class="temple-grid">
+
+            <figure data-year="old" data-size="large">
+                <img src="images/temple-placeholder.webp"
+                    alt="San Diego California Temple"
+                    loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="large">
+                <img src="images/barcelona_spain_temple.webp"
+                    alt="San Diego California Temple"
+                    loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="small">
+                <img src="images/brussels_belgium_temple.webp"
+                    alt="San Diego California Temple"
+                    loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="large">
+                <img src="images/buenos_aires_argentina_temple.webp"
+                    alt="San Diego California Temple"
+                    loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="small">
+                <img src="images/cochabamba_bolivia_temple.webp"
+                    alt="San Diego California Temple"
+                    loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="large">
+                <img src="images/des_moines_iowa_temple.webp"
+                    alt="San Diego California Temple"
+                    loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="small">
+                <img src="images/ohio_temple.webp"
+                    alt="San Diego California Temple"
+                    loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="large">
+                <img src="images/switzerland_temple.webp"
+                    alt="San Diego California Temple"
+                    loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="large">
+                <img src="images/wyoming_temple.webp"
+                    alt="San Diego California Temple"
+                    loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸 Gisela Casas 🌸 Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

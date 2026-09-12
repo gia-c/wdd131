@@ -3,13 +3,13 @@
    ========================= */
 
 :root {
-    --primary-color: #24577a;
-    --secondary-color: #163b52;
-    --accent-color: #c62828;
-    --light-color: #f4f8fa;
+    --primary-color: #14213d;
+    --secondary-color: #14213d;
+    --accent-color: #fca311;
+    --light-color: #e5e5e5;
     --white: #ffffff;
-    --text-color: #222222;
-    --border-color: #b8c4ca;
+    --text-color: #495057;
+    --border-color: #e5e5e5;
 
     --heading-font: "DM Sans", sans-serif;
     --body-font: "Nunito", sans-serif;
@@ -75,7 +75,7 @@ nav a {
 
 nav a:hover {
     background-color: var(--accent-color);
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 
@@ -226,7 +226,7 @@ h1 {
 }
 
 .resources a {
-    color: #0645ad;
+    color: #14213d;
 }
 
 .resources a:hover {
@@ -252,7 +252,7 @@ footer p {
 }
 
 #lastModified {
-    color: #fff700;
+    color: #fca311;
     font-size: 0.8rem;
 }
 
