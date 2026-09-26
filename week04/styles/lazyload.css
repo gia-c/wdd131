@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    margin: 20px auto;
+    object-fit: cover;
+
+    animation: fadeFromBlack 2s ease-in;
+}
+
+@keyframes fadeFromBlack {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
