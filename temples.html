@@ -13,14 +13,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/og-temples.css">
+    <link rel="stylesheet" href="styles/og-temples-large.css">
 
-    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/temples-og.js" defer></script>
 </head>
 
 <body>
@@ -38,7 +37,7 @@
             </button>
 
             <nav id="navigation">
-                <a href="#" id="home">Home</a>
+                <a href="temples.html">Home</a>
                 <a href="#" id="old">Old</a>
                 <a href="#" id="new">New</a>
                 <a href="#" id="large">Large</a>
@@ -52,8 +51,72 @@
 
         <h1 id="page-title">Home</h1>
 
-        <!-- JavaScript will create the temple cards here -->
-        <section class="temple-grid" id="temple-grid"></section>
+        <section class="temple-grid">
+
+            <figure data-year="old" data-size="large">
+                <img src="images/temple-placeholder.webp"
+                    alt="San Diego California Temple"
+                    loading="lazy">
+                <figcaption>San Diego, California</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="large">
+                <img src="images/barcelona_spain_temple.webp"
+                    alt="Barcelona Temple"
+                    loading="lazy">
+                <figcaption>Barcelona, Spain</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="small">
+                <img src="images/brussels_belgium_temple.webp"
+                    alt="Belgium Temple"
+                    loading="lazy">
+                <figcaption>Brussels, Belgium</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="large">
+                <img src="images/argentina_temple.webp"
+                    alt="Buenos Aires Temple"
+                    loading="lazy">
+                <figcaption>Buenos Aires, Argentina</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="small">
+                <img src="images/cochabamba_bolivia_temple.webp"
+                    alt="Cochabamba Temple"
+                    loading="lazy">
+                <figcaption>Cochabamba, Bolivia</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="large">
+                <img src="images/des_moines_iowa_temple.webp"
+                    alt="Des Moines Temple"
+                    loading="lazy">
+                <figcaption>Des Moines, Iowa</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="small">
+                <img src="images/ohio_temple.webp"
+                    alt="Ohio Temple"
+                    loading="lazy">
+                <figcaption>Ohio</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="large">
+                <img src="images/switzerland_temple.webp"
+                    alt="Switzerland Temple"
+                    loading="lazy">
+                <figcaption>Switzerland</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="large">
+                <img src="images/wyoming_temple.webp"
+                    alt="Wyoming Temple"
+                    loading="lazy">
+                <figcaption>Wyoming</figcaption>
+            </figure>
+
+        </section>
 
     </main>
 

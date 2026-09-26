@@ -1,0 +1,217 @@
+/* =========================
+   TEMPLE ALBUM
+   MOBILE FIRST
+   ========================= */
+
+:root {
+    --primary-color: #14213d;
+    --secondary-color: #14213d;
+    --accent-color: #fca311;
+    --light-color: #e5e5e5;
+    --white: #ffffff;
+    --text-color: #495057;
+    --border-color: #e5e5e5;
+
+    --heading-font: "DM Sans", sans-serif;
+    --body-font: "Nunito", sans-serif;
+}
+
+
+/* =========================
+   GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.header-content {
+    padding: 15px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-title {
+    margin: 0;
+
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+/* =========================
+   HAMBURGER BUTTON
+   ========================= */
+
+#menu-button {
+    display: block;
+
+    border: none;
+    background: transparent;
+    color: var(--white);
+
+    font-size: 2rem;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+#menu-button:hover,
+#menu-button:focus {
+    color: var(--white);
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+
+    margin-top: 12px;
+
+    background-color: var(--white);
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    padding: 12px 10px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: var(--secondary-color);
+
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+    padding: 25px 16px 35px;
+
+    flex: 1;
+}
+
+h1 {
+    margin: 10px 0 22px;
+
+    text-align: center;
+
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    color: var(--secondary-color);
+}
+
+
+/* =========================
+   TEMPLE GRID
+   ========================= */
+
+.temple-grid {
+    display: grid;
+
+    /* ONE COLUMN ON MOBILE */
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+
+    text-align: center;
+}
+
+figure img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+figcaption {
+    margin-top: 4px;
+
+    font-family: var(--body-font);
+    font-size: 1rem;
+
+    color: var(--primary-color);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    padding: 15px;
+
+    background-color: var(--primary-color);
+    color: var(--white);
+
+    text-align: center;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+#lastModified {
+    color: #fff700;
+    font-size: 0.8rem;
+}
