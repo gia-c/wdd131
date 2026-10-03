@@ -8,6 +8,7 @@
     --white: #ffffff;
     --text-color: #333333;
     --border-color: #b8c2cc;
+    --required-color: #b00020;
 }
 
 * {
@@ -26,7 +27,7 @@ body {
 }
 
 .required {
-    color: #b00020;
+    color: var(--required-color);
     font-weight: bold;
 }
 /* ---------- Header ---------- */
@@ -163,7 +164,7 @@ input[type="checkbox"] {
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 3px solid rgba(252, 163, 17, 0.35);
+    outline: 3px solid var(--accent-color);
     border-color: var(--secondary-color);
 }
 
@@ -187,7 +188,7 @@ input[type="submit"]:hover {
 }
 
 input[type="submit"]:focus {
-    outline: 3px solid rgba(252, 163, 17, 0.6);
+    outline: 3px solid var(--accent-color);
     outline-offset: 2px;
 }
 
