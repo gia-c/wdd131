@@ -1,0 +1,252 @@
+/* ---------- General Styles ---------- */
+
+:root {
+    --primary-color: #14213d;
+    --secondary-color: #1d3557;
+    --accent-color: #fca311;
+    --light-color: #f1f4f6;
+    --white: #ffffff;
+    --text-color: #333333;
+    --border-color: #b8c2cc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    line-height: 1.5;
+}
+
+.required {
+    color: #b00020;
+    font-weight: bold;
+}
+/* ---------- Header ---------- */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+/* ---------- Main ---------- */
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+/* ---------- Form ---------- */
+
+form {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label,
+legend {
+    font-weight: bold;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font: inherit;
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* ---------- Fieldsets ---------- */
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin: 0 0 1.5rem;
+    padding: 1rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+}
+
+legend span,
+.form-group span {
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+
+/* ---------- Rating ---------- */
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.rating input {
+    margin-bottom: 0.25rem;
+}
+
+.rating span {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+
+/* ---------- Checkboxes ---------- */
+
+fieldset label {
+    display: block;
+    margin: 0.75rem 0;
+    font-weight: normal;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--secondary-color);
+}
+
+
+/* ---------- Focus States ---------- */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(252, 163, 17, 0.35);
+    border-color: var(--secondary-color);
+}
+
+
+/* ---------- Submit Button ---------- */
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+}
+
+input[type="submit"]:focus {
+    outline: 3px solid rgba(252, 163, 17, 0.6);
+    outline-offset: 2px;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.25rem;
+}
+
+
+/* ---------- Larger Screens ---------- */
+
+@media screen and (min-width: 600px) {
+    main {
+        padding: 0;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    .rating {
+        justify-content: space-around;
+    }
+}
+
+/* ---------- Confirmation Page ---------- */
+
+.confirmation {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.confirmation h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.confirmation p {
+    font-size: 1.05rem;
+}
+
+#reviewCount {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+}
