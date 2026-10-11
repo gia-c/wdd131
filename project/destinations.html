@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse beaches, mountains, lagoons, cities, and Amazon destinations in Peru. Filter by region, department, experience type, or keyword.">
+    <meta name="author" content="Gisela Casas">
+    <title>Destinations | Discover Peru</title>
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Nunito:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="data/destinations-data.js" defer></script>
+    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/destinations.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/logo.jpg" alt="" width="56" height="56">
+            <span>Discover Peru</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Main">
+            <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html" aria-current="page">Destinations</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="section-block" aria-labelledby="destinations-heading">
+            <h1 class="section-heading" id="destinations-heading">Explore Peru at your own pace</h1>
+            <p class="section-intro">Browse every destination in the guide. Filter by region, department, experience type, or keyword, and save the places you want to visit.</p>
+            <div class="filters" role="search" aria-label="Filter destinations">
+                <div class="field">
+                    <label for="region-filter">Region</label>
+                    <select id="region-filter">
+                        <option value="">All regions</option>
+                        <option value="Coast">Coast</option>
+                        <option value="Highlands">Highlands</option>
+                        <option value="Amazon">Amazon</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="department-filter">Department</label>
+                    <select id="department-filter">
+                        <option value="">All departments</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="type-filter">Experience type</label>
+                    <select id="type-filter">
+                        <option value="">All types</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="search-filter">Search</label>
+                    <input type="search" id="search-filter" name="search" autocomplete="off">
+                </div>
+                <button class="button button-outline" id="clear-filters" type="button">Clear filters</button>
+            </div>
+            <p class="result-count" id="result-count" role="status"></p>
+            <div class="card-grid" id="destination-list"></div>
+        </section>
+        <section class="section-block" aria-labelledby="resources-heading">
+            <h2 class="section-heading" id="resources-heading">Helpful travel resources</h2>
+            <div class="guide-grid">
+                <a class="guide-card" href="https://www.peru.travel/" target="_blank" rel="noopener noreferrer">
+                    <h3>Peru Travel<span class="visually-hidden"> (opens in a new tab)</span></h3>
+                    <p>The official tourism website of Peru, with destination ideas, experiences, and trip planning tools.</p>
+                </a>
+                <a class="guide-card" href="https://www.gob.pe/institucion/mincetur/informes-publicaciones/120-rutas-turisticas" target="_blank" rel="noopener noreferrer">
+                    <h3>MINCETUR Tourist Routes<span class="visually-hidden"> (opens in a new tab)</span></h3>
+                    <p>Tourist routes published by the Peruvian Ministry of Foreign Trade and Tourism.</p>
+                </a>
+                <a class="guide-card" href="https://machupicchu.gob.pe/" target="_blank" rel="noopener noreferrer">
+                    <h3>Official Machu Picchu<span class="visually-hidden"> (opens in a new tab)</span></h3>
+                    <p>Official information to help plan a visit to the Machu Picchu sanctuary.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p id="copyright">© Discover Peru</p>
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
+</body>
+</html>
